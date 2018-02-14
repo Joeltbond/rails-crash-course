@@ -11,5 +11,7 @@
     <%= image_tag image_post.url, class: "img-responsive" %>
 
     <%= image_post.body %>
+    <br>
+    <%= link_to time_ago_in_words(image_post.created_at), post_path(image_post) %>
   </div>
 </div>
